@@ -1,0 +1,199 @@
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0;
+    padding: 2rem;
+    border-bottom: 10px solid $color-primary;
+    box-shadow: 0rem 2rem 4rem rgba(0, 0, 0, 0.5);
+
+    &__logo--icon{
+        height: 10rem;
+        width: 10rem;
+        
+        cursor: pointer;
+
+        &:hover{
+            animation: rotate-icon 1s ease-in-out;
+        }
+
+        @keyframes rotate-icon{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+       
+    }
+
+    &__characters{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        
+    }
+
+}
+
+.characters{
+    
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        list-style: none;
+        margin: 0;
+        
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        
+        margin: 0 5rem;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        cursor: pointer;
+        background-color: $color-primary;
+        border: 1px solid $color-text;
+        text-transform: uppercase;
+        transition: all .2s ease;
+        
+        
+        
+        
+        &:hover{
+            background-color: $color-primary-light;
+            transform: translateY(-.5rem);
+        }
+
+        a{
+            text-decoration: none;
+            color: $color-text;
+            letter-spacing: .2rem;
+            font-size: large;
+            transition: all 0.2s ease;
+        }
+
+        &:hover a{
+            color: yellow;
+        }
+
+        
+
+        
+        
+    }
+
+}
+
+.subject{
+
+
+    &__name{
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        text-align: center;
+        color: $color-text;
+        position: absolute;
+        bottom: 0;
+        background-color: $color-primary;
+        border-radius: 0 1rem 0 1rem;
+        padding: .5rem 1rem;
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        width: 70%;
+
+        
+        
+    }
+
+    &__content{
+        position: relative;
+    }
+
+    &__picture{
+        width: 100%;
+        border: 2px solid $color-primary;
+        border-radius: 1rem;
+        box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.5);
+        
+        
+    }
+
+    &__text{
+        color: $color-primary;
+        font-size: 2rem;
+        border-radius: 2px solid $color-primary;
+            letter-spacing: .2rem;
+            margin: 0.5rem 1rem;
+            box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.5);
+        
+    }
+
+
+    &__description{
+        border: 2px solid $color-primary;
+        border-radius: 1rem;
+        
+
+    }
+
+
+}
+
+.object{
+
+    &__picture{
+        
+        width: 100%;
+        border: 2px solid $color-primary;
+        border-radius: 1rem;
+        
+    }
+
+    &__box{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 10rem;
+        
+        margin-bottom: 1rem;
+        width: 45%;
+        
+    }
+
+    &__content{
+        width: 100%;
+        position: relative;
+        
+    }
+
+    &__name{
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        text-align: center;
+        color: $color-text;
+        position: absolute;
+        bottom: 0;
+        background-color: $color-primary;
+        border-radius: 0 1rem 0 1rem;
+        padding: .5rem 1rem;
+    }
+
+   
+
+
+} 
+
